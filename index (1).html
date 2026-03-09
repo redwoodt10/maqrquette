@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Marquette County Republican Party - Organizing, serving, and leading in Michigan's Upper Peninsula.">
+<title>Marquette County Republican Party | Michigan's Upper Peninsula</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+:root{--navy-900:#06101F;--navy-800:#0A1628;--navy-700:#0F2240;--navy-600:#162D52;--navy-500:#1E3A68;--red-600:#B71C30;--red-500:#C41E3A;--red-400:#DC3545;--red-300:#E8697A;--slate-700:#374151;--slate-600:#4A5568;--slate-500:#64748B;--slate-400:#94A3B8;--slate-300:#CBD5E1;--slate-200:#E2E8F0;--slate-100:#F1F5F9;--slate-50:#F8FAFC;--white:#FFFFFF;--font-display:'Libre Baskerville',Georgia,serif;--font-body:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;--sp1:.25rem;--sp2:.5rem;--sp3:.75rem;--sp4:1rem;--sp5:1.25rem;--sp6:1.5rem;--sp8:2rem;--sp10:2.5rem;--sp12:3rem;--sp16:4rem;--sp20:5rem;--sp24:6rem;--shadow-sm:0 1px 2px rgba(0,0,0,.05);--shadow-md:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--shadow-xl:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tr-fast:150ms ease;--tr-base:250ms ease;--rad-sm:4px;--rad-md:8px;--rad-lg:12px;--rad-xl:16px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--font-body);font-size:16px;line-height:1.7;color:var(--slate-700);background:var(--white);overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit;transition:color var(--tr-fast)}
+ul,ol{list-style:none}
+h1,h2,h3,h4{font-family:var(--font-display);color:var(--navy-800);line-height:1.25;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.25rem)}h2{font-size:clamp(1.625rem,3.5vw,2.5rem)}h3{font-size:clamp(1.25rem,2.5vw,1.625rem)}
+p+p{margin-top:var(--sp4)}
+::selection{background:var(--red-500);color:var(--white)}
+:focus-visible{outline:3px solid var(--red-400);outline-offset:2px}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--sp6)}
+.container--narrow{max-width:900px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.section-label{display:inline-flex;align-items:center;gap:var(--sp2);font-family:var(--font-body);font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red-500);margin-bottom:var(--sp4)}
+.section-label::before{content:'';display:inline-block;width:24px;height:2px;background:var(--red-500)}
+.section-heading{margin-bottom:var(--sp6)}
+.section-subtitle{font-size:1.0625rem;color:var(--slate-500);max-width:600px;line-height:1.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp2);font-family:var(--font-body);font-weight:600;font-size:.9375rem;letter-spacing:.02em;padding:.8125rem 1.75rem;border:2px solid transparent;border-radius:var(--rad-sm);cursor:pointer;transition:all var(--tr-base);white-space:nowrap;text-align:center;line-height:1}
+.btn--primary{background:var(--red-500);color:var(--white);border-color:var(--red-500)}.btn--primary:hover{background:var(--red-600);border-color:var(--red-600);transform:translateY(-1px);box-shadow:0 4px 12px rgba(196,30,58,.35)}
+.btn--secondary{background:transparent;color:var(--white);border-color:rgba(255,255,255,.5)}.btn--secondary:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
+.btn--outline{background:transparent;color:var(--navy-700);border-color:var(--slate-300)}.btn--outline:hover{border-color:var(--navy-700);background:var(--navy-700);color:var(--white)}
+.btn--donate{background:var(--red-500);color:var(--white);border-color:var(--red-500);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.8125rem}.btn--donate:hover{background:var(--red-600);border-color:var(--red-600);box-shadow:0 4px 16px rgba(196,30,58,.4);transform:translateY(-1px)}
+.btn--white{background:var(--white);color:var(--navy-800);border-color:var(--white);font-weight:700}.btn--white:hover{background:var(--slate-100);box-shadow:var(--shadow-lg);transform:translateY(-1px)}
+.btn--sm{padding:.5625rem 1.25rem;font-size:.8125rem}.btn--lg{padding:1rem 2.25rem;font-size:1rem}
+.btn svg{width:16px;height:16px;flex-shrink:0}
+
+/* Utility bar */
+.utility-bar{background:var(--navy-900);color:rgba(255,255,255,.7);font-size:.8125rem;padding:var(--sp2) 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.utility-bar__inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--sp2)}
+.utility-bar__social{display:flex;gap:var(--sp3)}
+.utility-bar__social a{display:flex;align-items:center;justify-content:center;width:24px;height:24px;color:rgba(255,255,255,.6)}
+.utility-bar__social a:hover{color:var(--white)}
+@media(max-width:640px){.utility-bar .hide-mobile{display:none}.utility-bar{font-size:.75rem}}
+
+/* Header */
+.header{position:sticky;top:0;z-index:1000;background:var(--navy-800);box-shadow:0 2px 20px rgba(0,0,0,.2)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;padding:0 var(--sp6);height:72px}
+.header__logo{display:flex;align-items:center;gap:var(--sp3);color:var(--white);font-family:var(--font-display);font-size:1.125rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.header__logo-icon{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--red-500);border-radius:var(--rad-sm);flex-shrink:0}
+.header__logo-text span{display:block;font-family:var(--font-body);font-size:.6875rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--slate-400);line-height:1;margin-top:2px}
+.nav{display:flex;align-items:center;gap:2px}
+.nav__link{font-family:var(--font-body);font-size:.875rem;font-weight:500;color:rgba(255,255,255,.8);padding:var(--sp2) var(--sp3);border-radius:var(--rad-sm);transition:all var(--tr-fast)}
+.nav__link:hover{color:var(--white);background:rgba(255,255,255,.08)}
+.header__donate-desktop{margin-left:var(--sp4)}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:var(--sp2);z-index:1001}
+.mobile-toggle span{display:block;width:24px;height:2px;background:var(--white);transition:all var(--tr-base);border-radius:2px}
+@media(max-width:1024px){
+  .nav{display:none}.header__donate-desktop{display:none}.mobile-toggle{display:flex}.header__inner{height:64px}
+  .nav.is-open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--navy-900);padding:80px var(--sp6) var(--sp8);z-index:1000;overflow-y:auto;gap:0}
+  .nav.is-open .nav__link{padding:var(--sp4);font-size:1.125rem;width:100%;border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav.is-open .nav__donate-mobile{display:block!important;margin-top:var(--sp6)}
+  .nav.is-open .nav__donate-mobile .btn{width:100%;font-size:1rem;padding:var(--sp4)}
+}
+@media(max-width:480px){.header__logo-text{font-size:1rem}.header__logo-text span{font-size:.6rem}}
+
+/* Hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;background:var(--navy-900);overflow:hidden}
+.hero__bg{position:absolute;inset:0;z-index:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover;opacity:.3}
+.hero__bg-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,16,31,.75) 0%,rgba(10,22,40,.62) 40%,rgba(15,34,64,.50) 100%)}
+.hero__accent{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red-500) 0%,var(--red-500) 33%,var(--white) 33%,var(--white) 66%,var(--navy-500) 66%);z-index:3}
+.hero__content{position:relative;z-index:2;max-width:720px;padding:var(--sp24) 0 var(--sp16)}
+.hero__badge{display:inline-flex;align-items:center;gap:var(--sp2);background:rgba(196,30,58,.15);border:1px solid rgba(196,30,58,.3);color:var(--red-300);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:var(--sp2) var(--sp4);border-radius:100px;margin-bottom:var(--sp8)}
+.hero__title{font-size:clamp(2.25rem,5.5vw,3.5rem);color:var(--white);margin-bottom:var(--sp6);line-height:1.15}
+.hero__title em{font-style:italic;color:var(--red-300)}
+.hero__desc{font-size:1.125rem;color:rgba(255,255,255,.7);max-width:560px;margin-bottom:var(--sp10);line-height:1.8}
+.hero__actions{display:flex;flex-wrap:wrap;gap:var(--sp4)}
+.hero__stats{position:relative;z-index:2;display:flex;gap:var(--sp12);margin-top:var(--sp16);padding-top:var(--sp8);border-top:1px solid rgba(255,255,255,.1)}
+.hero__stat-num{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--white);line-height:1}
+.hero__stat-lbl{font-size:.8125rem;color:rgba(255,255,255,.5);margin-top:var(--sp1);text-transform:uppercase;letter-spacing:.06em;font-weight:500}
+@media(max-width:640px){.hero{min-height:100vh;min-height:100dvh}.hero__content{padding:var(--sp12) 0}.hero__actions{flex-direction:column}.hero__actions .btn{width:100%;justify-content:center}.hero__stats{gap:var(--sp6);flex-wrap:wrap}.hero__stat-num{font-size:1.5rem}.hero__badge{font-size:.65rem;padding:var(--sp1) var(--sp3)}}
+
+/* Photo Strip */
+.photo-strip{display:grid;grid-template-columns:repeat(4,1fr);height:200px;overflow:hidden}
+.photo-strip__item{position:relative;overflow:hidden}
+.photo-strip__item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.photo-strip__item:hover img{transform:scale(1.08)}
+.photo-strip__item::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(6,16,31,.3) 100%);pointer-events:none}
+@media(max-width:768px){.photo-strip{grid-template-columns:repeat(2,1fr);height:160px}}
+@media(max-width:480px){.photo-strip{height:120px}}
+
+/* Membership */
+.membership{padding:var(--sp20) 0;background:var(--white)}
+.membership__header{text-align:center;max-width:620px;margin:0 auto var(--sp12)}
+.membership__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp8);max-width:800px;margin:0 auto}
+.mcard{background:var(--white);border:2px solid var(--slate-200);border-radius:var(--rad-lg);padding:var(--sp10);text-align:center;transition:all var(--tr-base);position:relative;overflow:hidden}
+.mcard:hover{border-color:var(--navy-500);box-shadow:var(--shadow-xl);transform:translateY(-4px)}
+.mcard--feat{border-color:var(--red-500);background:linear-gradient(180deg,rgba(196,30,58,.02) 0%,var(--white) 100%);padding-top:calc(var(--sp10) + 28px)}
+.mcard--feat::before{content:'Most Popular';position:absolute;top:0;left:0;right:0;background:var(--red-500);color:var(--white);font-size:.6875rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:var(--sp2) 0}
+.mcard__icon{width:56px;height:56px;background:var(--slate-100);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp5)}
+.mcard--feat .mcard__icon{background:rgba(196,30,58,.08)}
+.mcard__icon svg{width:24px;height:24px;color:var(--navy-700)}
+.mcard--feat .mcard__icon svg{color:var(--red-500)}
+.mcard__type{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-500);margin-bottom:var(--sp2)}
+.mcard__price{font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--navy-800);line-height:1;margin-bottom:var(--sp1)}
+.mcard__price span{font-size:1rem;font-weight:400;color:var(--slate-500)}
+.mcard__period{font-size:.875rem;color:var(--slate-500);margin-bottom:var(--sp6)}
+.mcard__features{text-align:left;margin-bottom:var(--sp8)}
+.mcard__feat{display:flex;align-items:flex-start;gap:var(--sp3);padding:var(--sp2) 0;font-size:.9375rem;color:var(--slate-700)}
+.mcard__feat svg{width:18px;height:18px;color:var(--red-500);flex-shrink:0;margin-top:2px}
+.mcard .btn{width:100%}
+@media(max-width:640px){.membership__grid{grid-template-columns:1fr;max-width:420px}.mcard{padding:var(--sp8)}.mcard--feat{padding-top:calc(var(--sp8) + 28px)}.mcard__price{font-size:2.5rem}}
+
+/* Scenic Banner */
+.scenic{position:relative;height:320px;overflow:hidden}
+.scenic img{width:100%;height:100%;object-fit:cover}
+.scenic__over{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,16,31,.5) 0%,rgba(6,16,31,.7) 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:var(--sp6)}
+.scenic__text{color:var(--white);max-width:700px}
+.scenic__text h2{color:var(--white);font-size:clamp(1.5rem,3.5vw,2.25rem);margin-bottom:var(--sp4)}
+.scenic__text p{color:rgba(255,255,255,.8);font-size:1.0625rem;margin-bottom:var(--sp6)}
+@media(max-width:640px){.scenic{height:280px}}
+
+/* Events */
+.events{padding:var(--sp20) 0;background:var(--slate-50)}
+.events__header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:var(--sp12);flex-wrap:wrap;gap:var(--sp4)}
+.events__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp6)}
+.ecard{background:var(--white);border-radius:var(--rad-lg);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--slate-200);transition:all var(--tr-base)}
+.ecard:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.ecard__img{height:200px;position:relative;overflow:hidden;background:var(--navy-700)}
+.ecard__img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.ecard:hover .ecard__img img{transform:scale(1.05)}
+.ecard__date{position:absolute;top:var(--sp4);left:var(--sp4);background:var(--white);border-radius:var(--rad-md);padding:var(--sp2) var(--sp3);text-align:center;box-shadow:var(--shadow-md);min-width:54px}
+.ecard__month{font-size:.625rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red-500);line-height:1}
+.ecard__day{font-family:var(--font-display);font-size:1.375rem;font-weight:700;color:var(--navy-800);line-height:1.2}
+.ecard__body{padding:var(--sp6)}
+.ecard__tag{display:inline-block;font-size:.6875rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-600);background:var(--slate-100);padding:var(--sp1) var(--sp3);border-radius:100px;margin-bottom:var(--sp3)}
+.ecard__title{font-size:1.125rem;margin-bottom:var(--sp3);color:var(--navy-800)}
+.ecard__meta{display:flex;flex-direction:column;gap:var(--sp2);font-size:.8125rem;color:var(--slate-500)}
+.ecard__meta-item{display:flex;align-items:center;gap:var(--sp2)}
+.ecard__meta-item svg{width:14px;height:14px;flex-shrink:0;opacity:.6}
+@media(max-width:1024px){.events__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.events__grid{grid-template-columns:1fr}}
+
+/* About */
+.about{padding:var(--sp24) 0;background:var(--white)}
+.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp16);align-items:center}
+.about__img{position:relative;border-radius:var(--rad-lg);overflow:hidden;aspect-ratio:4/3;background:var(--slate-100)}
+.about__img img{width:100%;height:100%;object-fit:cover}
+.about__text{font-size:1.0625rem;color:var(--slate-600);margin-bottom:var(--sp8)}
+.about__values{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4);margin-top:var(--sp8)}
+.about__val{display:flex;align-items:flex-start;gap:var(--sp3);font-size:.9375rem;font-weight:500;color:var(--navy-800)}
+.about__val svg{width:18px;height:18px;color:var(--red-500);flex-shrink:0;margin-top:2px}
+@media(max-width:768px){.about__grid{grid-template-columns:1fr;gap:var(--sp10)}.about__values{grid-template-columns:1fr}}
+
+/* Get Involved */
+.involved{padding:var(--sp20) 0;background:var(--navy-800);position:relative;overflow:hidden}
+.involved::before{content:'';position:absolute;top:0;right:0;width:500px;height:500px;background:radial-gradient(circle,rgba(196,30,58,.08) 0%,transparent 70%);pointer-events:none}
+.involved__header{text-align:center;max-width:600px;margin:0 auto var(--sp12)}
+.involved__header .section-label{color:var(--red-300)}.involved__header .section-label::before{background:var(--red-300)}
+.involved__header .section-heading{color:var(--white)}.involved__header .section-subtitle{color:rgba(255,255,255,.6);margin:0 auto}
+.involved__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp6)}
+.icard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--rad-lg);padding:var(--sp8);text-align:center;transition:all var(--tr-base)}
+.icard:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);transform:translateY(-4px)}
+.icard__icon{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp5);background:rgba(196,30,58,.12)}
+.icard__icon svg{width:24px;height:24px;color:var(--red-400)}
+.icard__title{color:var(--white);font-size:1.125rem;margin-bottom:var(--sp3)}
+.icard__text{font-size:.9375rem;color:rgba(255,255,255,.55);line-height:1.65;margin-bottom:var(--sp6)}
+.icard .btn{width:100%}
+@media(max-width:1024px){.involved__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.involved__grid{grid-template-columns:1fr}.icard{padding:var(--sp6)}}
+
+/* Leadership */
+.leadership{padding:var(--sp20) 0;background:var(--slate-50)}
+.leadership__header{text-align:center;max-width:600px;margin:0 auto var(--sp12)}
+.leadership__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp6)}
+.lcard{text-align:center;background:var(--white);border-radius:var(--rad-lg);padding:var(--sp8) var(--sp6);border:1px solid var(--slate-200);transition:all var(--tr-base)}
+.lcard:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+.lcard__avatar{width:96px;height:96px;border-radius:50%;background:var(--navy-700);margin:0 auto var(--sp5);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-display);font-size:1.5rem;font-weight:700}
+.lcard__name{font-size:1.0625rem;font-weight:700;color:var(--navy-800);margin-bottom:var(--sp1);font-family:var(--font-body)}
+.lcard__role{font-size:.8125rem;color:var(--red-500);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:1024px){.leadership__grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.leadership__grid{grid-template-columns:1fr 1fr;gap:var(--sp4)}.lcard{padding:var(--sp6) var(--sp4)}.lcard__avatar{width:72px;height:72px;font-size:1.125rem}}
+
+/* Donate */
+.donate-s{padding:var(--sp24) 0;background:linear-gradient(135deg,var(--navy-900) 0%,var(--navy-700) 100%);position:relative;overflow:hidden}
+.donate-s::before{content:'';position:absolute;top:-200px;left:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(196,30,58,.1) 0%,transparent 60%);pointer-events:none}
+.donate-s__inner{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp16);align-items:center}
+.donate-s__text .section-label{color:var(--red-300)}.donate-s__text .section-label::before{background:var(--red-300)}
+.donate-s__text .section-heading{color:var(--white)}
+.donate-s__text p{color:rgba(255,255,255,.65);font-size:1.0625rem;line-height:1.8;margin-bottom:var(--sp6)}
+.donate-s__text ul{margin-bottom:var(--sp8)}
+.donate-s__text li{display:flex;align-items:flex-start;gap:var(--sp3);color:rgba(255,255,255,.75);font-size:.9375rem;padding:var(--sp2) 0}
+.donate-s__text li svg{width:16px;height:16px;color:var(--red-400);flex-shrink:0;margin-top:3px}
+.dcard{background:var(--white);border-radius:var(--rad-xl);padding:var(--sp10);box-shadow:0 24px 48px rgba(0,0,0,.3)}
+.dcard__title{text-align:center;font-size:1.375rem;margin-bottom:var(--sp6)}
+.dcard__amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp3);margin-bottom:var(--sp6)}
+.dcard__amt{display:flex;align-items:center;justify-content:center;padding:var(--sp4);border:2px solid var(--slate-200);border-radius:var(--rad-md);font-family:var(--font-body);font-size:1.125rem;font-weight:700;color:var(--navy-800);cursor:pointer;transition:all var(--tr-fast);background:var(--white)}
+.dcard__amt:hover,.dcard__amt.is-active{border-color:var(--red-500);background:rgba(196,30,58,.04);color:var(--red-500)}
+.dcard__custom{width:100%;font-family:var(--font-body);font-size:1rem;padding:var(--sp4);border:2px solid var(--slate-200);border-radius:var(--rad-md);margin-bottom:var(--sp4);color:var(--navy-800)}
+.dcard__custom:focus{outline:none;border-color:var(--red-500)}
+.dcard__recurring{display:flex;align-items:center;gap:var(--sp3);font-size:.9375rem;color:var(--slate-600);margin-bottom:var(--sp6);cursor:pointer}
+.dcard__recurring input{accent-color:var(--red-500);width:18px;height:18px}
+.dcard .btn{width:100%}
+.dcard__trust{text-align:center;font-size:.75rem;color:var(--slate-400);margin-top:var(--sp4);display:flex;align-items:center;justify-content:center;gap:var(--sp2)}
+.dcard__trust svg{width:14px;height:14px}
+@media(max-width:768px){.donate-s__inner{grid-template-columns:1fr;gap:var(--sp10)}.dcard{padding:var(--sp6)}.dcard__amounts{gap:var(--sp2)}.dcard__amt{padding:var(--sp3);font-size:1rem}}
+
+/* Facebook Hub */
+.fb-hub{padding:var(--sp20) 0;background:var(--white)}
+.fb-hub__header{text-align:center;max-width:600px;margin:0 auto var(--sp10)}
+.fb-hub__layout{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp8);align-items:start}
+.fb-hub__embed{background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--rad-lg);overflow:hidden;min-height:600px;display:flex;align-items:center;justify-content:center}
+.fb-hub__sidebar{display:flex;flex-direction:column;gap:var(--sp6)}
+.fb-cta{background:var(--navy-800);border-radius:var(--rad-lg);padding:var(--sp8);text-align:center}
+.fb-cta h3{color:var(--white);margin-bottom:var(--sp3);font-size:1.25rem}
+.fb-cta p{color:rgba(255,255,255,.6);font-size:.9375rem;margin-bottom:var(--sp6)}
+.fb-cta .btn{width:100%}
+.fb-info{background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--rad-lg);padding:var(--sp6)}
+.fb-info h4{margin-bottom:var(--sp4);font-size:1rem}
+.fb-info__item{display:flex;align-items:flex-start;gap:var(--sp3);padding:var(--sp3) 0;border-bottom:1px solid var(--slate-200);font-size:.9375rem;color:var(--slate-600)}
+.fb-info__item:last-child{border-bottom:none}
+.fb-info__item svg{width:18px;height:18px;color:var(--red-500);flex-shrink:0;margin-top:2px}
+@media(max-width:768px){.fb-hub__layout{grid-template-columns:1fr}.fb-hub__embed{min-height:500px}}
+
+/* Newsletter */
+.newsletter{padding:var(--sp16) 0;background:var(--red-500);position:relative;overflow:hidden}
+.newsletter::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--red-600) 0%,var(--red-500) 50%,var(--red-400) 100%)}
+.newsletter__inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:var(--sp8);flex-wrap:wrap}
+.newsletter__text h2{color:var(--white);font-size:1.75rem;margin-bottom:var(--sp2)}
+.newsletter__text p{color:rgba(255,255,255,.85);font-size:1rem}
+.newsletter__fw{flex:1;max-width:520px}
+.newsletter__form{display:flex;gap:var(--sp3)}
+.newsletter__input{flex:1;padding:var(--sp4) var(--sp5);border:2px solid rgba(255,255,255,.3);border-radius:var(--rad-sm);background:rgba(255,255,255,.15);color:var(--white);font-family:var(--font-body);font-size:.9375rem;transition:all var(--tr-fast);min-width:0}
+.newsletter__input::placeholder{color:rgba(255,255,255,.55)}
+.newsletter__input:focus{outline:none;border-color:var(--white);background:rgba(255,255,255,.2)}
+.newsletter__consent{font-size:.6875rem;color:rgba(255,255,255,.7);margin-top:var(--sp3);line-height:1.5}
+@media(max-width:768px){.newsletter__inner{flex-direction:column;text-align:center}.newsletter__fw{width:100%;max-width:100%}.newsletter__form{flex-direction:column}.newsletter__form .btn{width:100%}}
+
+/* Resources */
+.resources{padding:var(--sp20) 0;background:var(--slate-50)}
+.resources__header{text-align:center;max-width:600px;margin:0 auto var(--sp12)}
+.resources__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp6)}
+.rcard{background:var(--white);border:1px solid var(--slate-200);border-radius:var(--rad-lg);padding:var(--sp8);transition:all var(--tr-base)}
+.rcard:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-color:var(--navy-500)}
+.rcard__icon{width:48px;height:48px;border-radius:var(--rad-md);background:var(--slate-100);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp5)}
+.rcard__icon svg{width:22px;height:22px;color:var(--navy-700)}
+.rcard__title{font-size:1.0625rem;margin-bottom:var(--sp3)}
+.rcard__text{font-size:.9375rem;color:var(--slate-500);line-height:1.65;margin-bottom:var(--sp5)}
+.rcard__link{display:inline-flex;align-items:center;gap:var(--sp2);font-size:.875rem;font-weight:600;color:var(--red-500)}
+.rcard__link:hover{color:var(--red-600)}
+.rcard__link svg{width:14px;height:14px}
+@media(max-width:768px){.resources__grid{grid-template-columns:1fr}}
+
+/* Contact */
+.contact-s{padding:var(--sp20) 0;background:var(--white)}
+.cform{background:var(--slate-50);border:1px solid var(--slate-200);border-radius:var(--rad-lg);padding:var(--sp10)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4);margin-bottom:var(--sp4)}
+.form-group{margin-bottom:var(--sp4)}
+.form-label{display:block;font-size:.8125rem;font-weight:600;color:var(--navy-800);margin-bottom:var(--sp2)}
+.form-label--opt{font-weight:400;color:var(--slate-400)}
+.form-input,.form-select,.form-textarea{width:100%;padding:var(--sp3) var(--sp4);border:2px solid var(--slate-200);border-radius:var(--rad-md);font-family:var(--font-body);font-size:.9375rem;transition:border-color 150ms ease;color:var(--navy-800);background:var(--white)}
+.form-input:focus,.form-select:focus,.form-textarea:focus{outline:none;border-color:var(--red-500)}
+.form-textarea{resize:vertical}
+.form-check{display:flex;align-items:flex-start;gap:var(--sp3);font-size:.8125rem;color:var(--slate-500);cursor:pointer}
+.form-check input{accent-color:var(--red-500);margin-top:2px;width:16px;height:16px;flex-shrink:0}
+@media(max-width:640px){.form-row{grid-template-columns:1fr}.cform{padding:var(--sp6)}}
+
+/* Footer */
+.footer{background:var(--navy-900);color:rgba(255,255,255,.6);padding:var(--sp16) 0 0}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--sp12);padding-bottom:var(--sp12);border-bottom:1px solid rgba(255,255,255,.08)}
+.footer__brand p{font-size:.9375rem;line-height:1.7;margin-bottom:var(--sp6);max-width:300px}
+.footer__social{display:flex;gap:var(--sp3)}
+.footer__social a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--rad-sm);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.6);transition:all var(--tr-fast)}
+.footer__social a:hover{background:var(--red-500);border-color:var(--red-500);color:var(--white)}
+.footer__col h4{color:var(--white);font-family:var(--font-body);font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--sp5)}
+.footer__col a{display:block;font-size:.9375rem;padding:var(--sp2) 0;color:rgba(255,255,255,.55);transition:color var(--tr-fast)}
+.footer__col a:hover{color:var(--white)}
+.footer__bottom{display:flex;justify-content:space-between;align-items:flex-start;padding:var(--sp8) 0;gap:var(--sp8);flex-wrap:wrap}
+.footer__disclaimer{font-size:.75rem;line-height:1.6;color:rgba(255,255,255,.4);max-width:600px}
+.footer__disclaimer strong{color:rgba(255,255,255,.6)}
+.footer__legal{display:flex;gap:var(--sp6);font-size:.75rem;flex-shrink:0}
+.footer__legal a{color:rgba(255,255,255,.4)}.footer__legal a:hover{color:rgba(255,255,255,.7)}
+@media(max-width:768px){.footer__grid{grid-template-columns:1fr 1fr;gap:var(--sp8)}.footer__bottom{flex-direction:column}.footer__legal{flex-wrap:wrap;gap:var(--sp4)}}
+@media(max-width:480px){.footer__grid{grid-template-columns:1fr}}
+
+/* Sticky Donate Mobile */
+.sticky-donate{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--white);padding:var(--sp3) var(--sp4);box-shadow:0 -4px 20px rgba(0,0,0,.15);border-top:1px solid var(--slate-200)}
+.sticky-donate .btn{width:100%}
+@media(max-width:1024px){.sticky-donate{display:block}body{padding-bottom:68px}}
+
+/* Animations */
+.animate-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.animate-in.is-visible{opacity:1;transform:translateY(0)}
+.ad1{transition-delay:100ms}.ad2{transition-delay:200ms}.ad3{transition-delay:300ms}.ad4{transition-delay:400ms}
+
+/* Back to top */
+.btt{position:fixed;bottom:80px;right:20px;z-index:998;width:44px;height:44px;background:var(--navy-800);color:var(--white);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);opacity:0;transform:translateY(16px);transition:all var(--tr-base);pointer-events:none}
+.btt.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.btt:hover{background:var(--red-500)}
+.btt svg{width:20px;height:20px}
+@media(max-width:1024px){.btt{bottom:88px}}
+</style>
+</head>
+<body>
+
+<!-- SVG Icons (reusable) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+  <symbol id="i-thumbsup" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol>
+</svg>
+
+<!-- UTILITY BAR -->
+<div class="utility-bar" role="banner"><div class="container"><div class="utility-bar__inner">
+  <div style="display:flex;align-items:center;gap:var(--sp6)"><span>Marquette County, Michigan</span><span class="hide-mobile">&#183; Serving the Upper Peninsula</span></div>
+  <div class="utility-bar__social"><a href="https://www.facebook.com/profile.php?id=61577689494016" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" fill="currentColor"><use href="#i-fb"/></svg></a></div>
+</div></div></div>
+
+<!-- HEADER -->
+<header class="header"><div class="header__inner">
+  <a href="#home" class="header__logo" aria-label="Home">
+    <div class="header__logo-icon"><svg width="22" height="22" viewBox="0 0 64 64" fill="white"><path d="M52 12c-2.2 0-4.2.9-5.7 2.3C44.1 10.3 39.4 8 34 8c-9.9 0-18 8.1-18 18v2c-4.4 0-8 3.6-8 8s3.6 8 8 8h2v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4v-8h4v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4V36h2c1.1 0 2-.9 2-2v-4h4c2.2 0 4-1.8 4-4V16c0-2.2-1.8-4-4-4zm-4 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg></div>
+    <div class="header__logo-text">MQTGOP.COM<span>Marquette County Republican Party</span></div>
+  </a>
+  <nav class="nav" id="mainNav">
+    <a href="#home" class="nav__link">Home</a><a href="#membership" class="nav__link">Membership</a><a href="#events" class="nav__link">Events</a><a href="#about" class="nav__link">About</a><a href="#involved" class="nav__link">Get Involved</a><a href="#updates" class="nav__link">Updates</a><a href="#resources" class="nav__link">Resources</a><a href="#contact" class="nav__link">Contact</a>
+    <div class="nav__donate-mobile" style="display:none"><a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--donate btn--lg">Donate Now</a></div>
+  </nav>
+  <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--donate btn--sm header__donate-desktop"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg> Donate</a>
+  <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <img src="images/downtown-clocktower.jpg" alt="Downtown Marquette Michigan with historic clock tower and American flags" loading="eager">
+    <div class="hero__bg-overlay"></div>
+  </div>
+  <div class="hero__accent"></div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge"><svg width="14" height="14" viewBox="0 0 64 64" fill="currentColor"><path d="M52 12c-2.2 0-4.2.9-5.7 2.3C44.1 10.3 39.4 8 34 8c-9.9 0-18 8.1-18 18v2c-4.4 0-8 3.6-8 8s3.6 8 8 8h2v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4v-8h4v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4V36h2c1.1 0 2-.9 2-2v-4h4c2.2 0 4-1.8 4-4V16c0-2.2-1.8-4-4-4zm-4 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg> Organized &bull; Active &bull; Year-Round</div>
+      <h1 class="hero__title">Strong Voices for<br><em>Marquette County</em></h1>
+      <p class="hero__desc">The Marquette County Republican Party is building a stronger Upper Peninsula &mdash; by electing principled leaders, engaging our communities, and standing for the values that keep Michigan's north country free and thriving.</p>
+      <div class="hero__actions">
+        <a href="#membership" class="btn btn--primary btn--lg">Become a Member <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></a>
+        <a href="#involved" class="btn btn--secondary btn--lg">Get Involved</a>
+      </div>
+      <div class="hero__stats">
+        <div><div class="hero__stat-num">76</div><div class="hero__stat-lbl">Precincts</div></div>
+        <div><div class="hero__stat-num">2026</div><div class="hero__stat-lbl">Election Cycle</div></div>
+        <div><div class="hero__stat-num">UP</div><div class="hero__stat-lbl">Upper Peninsula</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="photo-strip__item"><img src="images/hero-ore-dock.jpg" alt="Marquette Lower Harbor Ore Dock at golden hour" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/red-lighthouse.jpg" alt="Marquette Harbor Lighthouse aerial view" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/presque-isle-aerial.jpg" alt="Presque Isle Park aerial view, Marquette Michigan" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/downtown-shops.jpg" alt="Downtown Marquette shops on Washington Street" loading="lazy"></div>
+</div>
+
+<!-- MEMBERSHIP -->
+<section class="membership" id="membership"><div class="container">
+  <div class="membership__header animate-in">
+    <span class="section-label">Membership</span>
+    <h2 class="section-heading">Renew or Join Today</h2>
+    <p class="section-subtitle" style="margin:0 auto">Your membership directly funds our efforts to elect Republican leaders, organize precincts, host events, and make our voice heard across the Upper Peninsula.</p>
+  </div>
+  <div class="membership__grid">
+    <div class="mcard animate-in ad1">
+      <div class="mcard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-grad"/></svg></div>
+      <div class="mcard__type">Student</div><div class="mcard__price"><span>$</span>20<span>/yr</span></div><div class="mcard__period">Annual Membership</div>
+      <div class="mcard__features">
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Full party membership &amp; voting rights</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Access to all party events &amp; meetings</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Networking with local leaders</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Build your resume through civic engagement</div>
+      </div>
+      <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--outline">Join as Student &mdash; $20</a>
+    </div>
+    <div class="mcard mcard--feat animate-in ad2">
+      <div class="mcard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-user"/></svg></div>
+      <div class="mcard__type">Individual</div><div class="mcard__price"><span>$</span>45<span>/yr</span></div><div class="mcard__period">Annual Membership</div>
+      <div class="mcard__features">
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Full party membership &amp; voting rights</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Priority access to all events &amp; meetings</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Direct connection to county leadership</div>
+        <div class="mcard__feat"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Shape local Republican strategy &amp; priorities</div>
+      </div>
+      <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--primary">Join as Individual &mdash; $45</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- SCENIC BANNER -->
+<div class="scenic">
+  <img src="images/sugarloaf-overlook.jpg" alt="Sugarloaf Mountain overlook with fall colors and Lake Superior, Marquette Michigan" loading="lazy">
+  <div class="scenic__over"><div class="scenic__text">
+    <h2>Stand With Us in 2026</h2>
+    <p>The upcoming election cycle is critical. Your involvement today shapes Marquette County's tomorrow.</p>
+    <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--primary btn--lg"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg> Support the Mission</a>
+  </div></div>
+</div>
+
+<!-- EVENTS -->
+<section class="events" id="events"><div class="container">
+  <div class="events__header"><div>
+    <span class="section-label">Upcoming Events</span><h2 class="section-heading">Mark Your Calendar</h2>
+    <p class="section-subtitle">From monthly meetings and candidate forums to community rallies, there's always a way to participate.</p>
+  </div><a href="#events" class="btn btn--outline">View All Events</a></div>
+  <div class="events__grid">
+    <article class="ecard animate-in ad1"><div class="ecard__img"><img src="images/hero-ore-dock.jpg" alt="Marquette Ore Dock - iconic Upper Peninsula landmark" loading="lazy"><div class="ecard__date"><div class="ecard__month">Apr</div><div class="ecard__day">12</div></div></div><div class="ecard__body"><span class="ecard__tag">Monthly Meeting</span><h3 class="ecard__title">April Executive Committee Meeting</h3><div class="ecard__meta"><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clock"/></svg> 6:00 PM &ndash; 8:00 PM</div><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg> Marquette County Courthouse</div></div></div></article>
+    <article class="ecard animate-in ad2"><div class="ecard__img"><img src="images/downtown-shops.jpg" alt="Historic downtown Marquette, home of the Lincoln Day Dinner" loading="lazy"><div class="ecard__date"><div class="ecard__month">May</div><div class="ecard__day">03</div></div></div><div class="ecard__body"><span class="ecard__tag">Fundraiser</span><h3 class="ecard__title">Lincoln Day Dinner</h3><div class="ecard__meta"><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clock"/></svg> 5:30 PM &ndash; 9:00 PM</div><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg> Landmark Inn, Marquette</div></div></div></article>
+    <article class="ecard animate-in ad3"><div class="ecard__img"><img src="images/presque-isle-aerial.jpg" alt="Presque Isle Park, Marquette - Summer volunteer picnic venue" loading="lazy"><div class="ecard__date"><div class="ecard__month">Jun</div><div class="ecard__day">21</div></div></div><div class="ecard__body"><span class="ecard__tag">Community</span><h3 class="ecard__title">Summer Volunteer Kickoff &amp; Picnic</h3><div class="ecard__meta"><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clock"/></svg> 12:00 PM &ndash; 3:00 PM</div><div class="ecard__meta-item"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg> Tourist Park, Marquette</div></div></div></article>
+  </div>
+</div></section>
+
+<!-- ABOUT -->
+<section class="about" id="about"><div class="container"><div class="about__grid">
+  <div class="about__img animate-in"><img src="images/black-rocks-shore.jpg" alt="Black Rocks shoreline on Lake Superior, Marquette Michigan" loading="lazy"></div>
+  <div class="animate-in ad2">
+    <span class="section-label">About Our Party</span><h2 class="section-heading">Rooted in Marquette County.<br>Working for Every Community.</h2>
+    <p class="about__text">The Marquette County Republican Party has been the voice of conservative, common-sense governance in Michigan's Upper Peninsula for generations. We organize at the precinct level, support Republican candidates from local office to the statehouse, and create opportunities for every citizen to make a difference.</p>
+    <p class="about__text">Whether you're a lifelong Republican, a first-time voter, or a community leader looking for a seat at the table, we're here to listen, organize, and act. Our county party is active year-round &mdash; not just during election season.</p>
+    <div class="about__values">
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Fiscal Responsibility</div>
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Individual Liberty</div>
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Constitutional Governance</div>
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Free Enterprise</div>
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Strong Communities</div>
+      <div class="about__val"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Grassroots Organizing</div>
+    </div>
+  </div>
+</div></div></section>
+
+<!-- GET INVOLVED -->
+<section class="involved" id="involved"><div class="container">
+  <div class="involved__header"><span class="section-label">Take Action</span><h2 class="section-heading">There's a Place for You</h2><p class="section-subtitle">From knocking on doors to attending meetings, every effort moves our county forward.</p></div>
+  <div class="involved__grid">
+    <div class="icard animate-in ad1"><div class="icard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-users"/></svg></div><h3 class="icard__title">Volunteer</h3><p class="icard__text">Help with events, canvassing, phone banks, data entry, or community outreach. Every hour counts.</p><a href="#contact" class="btn btn--secondary btn--sm">Sign Up</a></div>
+    <div class="icard animate-in ad2"><div class="icard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-calendar"/></svg></div><h3 class="icard__title">Attend Events</h3><p class="icard__text">Monthly meetings, candidate forums, dinners, and community rallies. Show up and be heard.</p><a href="#events" class="btn btn--secondary btn--sm">See Events</a></div>
+    <div class="icard animate-in ad3"><div class="icard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-thumbsup"/></svg></div><h3 class="icard__title">Become a Precinct Delegate</h3><p class="icard__text">The backbone of the party. Represent your neighbors at the county and state level.</p><a href="#contact" class="btn btn--secondary btn--sm">Learn More</a></div>
+    <div class="icard animate-in ad4"><div class="icard__icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg></div><h3 class="icard__title">Donate</h3><p class="icard__text">Every dollar stays local and goes toward building a stronger Republican organization.</p><a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--secondary btn--sm">Contribute</a></div>
+  </div>
+</div></section>
+
+<!-- LEADERSHIP -->
+<section class="leadership" id="leadership"><div class="container">
+  <div class="leadership__header animate-in"><span class="section-label">Our Team</span><h2 class="section-heading">County Party Leadership</h2><p class="section-subtitle" style="margin:0 auto">Meet the elected officers who organize our party and advance Republican principles in Marquette County.</p></div>
+  <div class="leadership__grid">
+    <div class="lcard animate-in ad1"><div class="lcard__avatar">CH</div><div class="lcard__name">County Chair</div><div class="lcard__role">Chairperson</div></div>
+    <div class="lcard animate-in ad2"><div class="lcard__avatar">VC</div><div class="lcard__name">Vice Chair</div><div class="lcard__role">Vice Chairperson</div></div>
+    <div class="lcard animate-in ad3"><div class="lcard__avatar">SE</div><div class="lcard__name">Secretary</div><div class="lcard__role">Secretary</div></div>
+    <div class="lcard animate-in ad4"><div class="lcard__avatar">TR</div><div class="lcard__name">Treasurer</div><div class="lcard__role">Treasurer</div></div>
+  </div>
+</div></section>
+
+<!-- DONATE -->
+<section class="donate-s" id="donate"><div class="container"><div class="donate-s__inner">
+  <div class="donate-s__text animate-in">
+    <span class="section-label">Support the Mission</span><h2 class="section-heading">Your Contribution Stays Local</h2>
+    <p>Every dollar donated goes directly toward organizing our precincts, supporting Republican candidates, hosting events, and keeping our party active across the Upper Peninsula.</p>
+    <ul>
+      <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Fund campaign materials for local candidates</li>
+      <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Support voter registration and outreach drives</li>
+      <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Keep the county party organized year-round</li>
+      <li><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-check"/></svg> Host candidate forums, dinners, and grassroots events</li>
+    </ul>
+    <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--white btn--lg">Give Now via Anedot</a>
+  </div>
+  <div class="dcard animate-in ad2">
+    <h3 class="dcard__title">Make a Contribution</h3>
+    <div class="dcard__amounts" role="group" aria-label="Suggested amounts">
+      <button class="dcard__amt" data-amount="25">$25</button><button class="dcard__amt" data-amount="50">$50</button><button class="dcard__amt is-active" data-amount="100">$100</button>
+      <button class="dcard__amt" data-amount="250">$250</button><button class="dcard__amt" data-amount="500">$500</button><button class="dcard__amt" data-amount="1000">$1,000</button>
+    </div>
+    <input type="text" class="dcard__custom" placeholder="Or enter a custom amount" aria-label="Custom amount">
+    <label class="dcard__recurring"><input type="checkbox" checked> Make this a monthly recurring donation</label>
+    <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--donate btn--lg" id="donateBtn"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg> Donate $100 Now</a>
+    <div class="dcard__trust"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-lock"/></svg> Secure donations powered by Anedot</div>
+  </div>
+</div></div></section>
+
+<!-- FACEBOOK FEED -->
+<section class="fb-hub" id="updates"><div class="container">
+  <div class="fb-hub__header animate-in">
+    <span class="section-label">Live Updates</span><h2 class="section-heading">Latest from Marquette County GOP</h2>
+    <p class="section-subtitle" style="margin:0 auto">Our Facebook page is our real-time news desk. Follow us to see event announcements, photos, and community updates as they happen.</p>
+  </div>
+  <div class="fb-hub__layout">
+    <div class="fb-hub__embed animate-in ad1" id="fbEmbedContainer">
+      <iframe id="fbFrame" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61577689494016&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&lazy=true" width="500" height="700" style="border:none;overflow:hidden;width:100%;max-width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay;clipboard-write;encrypted-media;picture-in-picture;web-share" loading="lazy" title="Marquette County GOP Facebook Feed"></iframe>
+    </div>
+    <div class="fb-hub__sidebar animate-in ad2">
+      <div class="fb-cta">
+        <svg width="40" height="40" fill="rgba(255,255,255,.3)" style="margin:0 auto var(--sp4);display:block"><use href="#i-fb"/></svg>
+        <h3>Follow Us on Facebook</h3><p>Get real-time updates, event photos, and announcements straight to your newsfeed.</p>
+        <a href="https://www.facebook.com/profile.php?id=61577689494016" target="_blank" rel="noopener" class="btn btn--primary"><svg width="16" height="16" fill="currentColor"><use href="#i-fb"/></svg> Follow on Facebook</a>
+      </div>
+      <div class="fb-info"><h4>Stay Connected</h4>
+        <div class="fb-info__item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-calendar"/></svg> Event announcements and RSVP info</div>
+        <div class="fb-info__item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-msg"/></svg> Community discussion and engagement</div>
+        <div class="fb-info__item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-img"/></svg> Photos from meetings, events, and rallies</div>
+        <div class="fb-info__item"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-star"/></svg> Endorsements and candidate news</div>
+      </div>
+      <div class="fb-cta" style="background:linear-gradient(135deg,var(--red-600),var(--red-500))">
+        <h3>Every Dollar Counts</h3><p>Help us keep our party organized, funded, and ready for 2026.</p>
+        <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--white"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg> Donate Now</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter"><div class="container"><div class="newsletter__inner">
+  <div class="newsletter__text"><h2>Stay in the Loop</h2><p>Get event announcements, election updates, and ways to help &mdash; straight to your inbox.</p></div>
+  <div class="newsletter__fw">
+    <div class="newsletter__form"><input type="email" class="newsletter__input" placeholder="Your email address" aria-label="Email"><button class="btn btn--white btn--sm">Get Updates</button></div>
+    <p class="newsletter__consent">By subscribing, you agree to receive email communications from the Marquette County Republican Party. You may unsubscribe at any time. We respect your privacy. If providing a phone number elsewhere on this site, you consent to receive text messages; message and data rates may apply.</p>
+  </div>
+</div></div></section>
+
+<!-- SECOND PHOTO STRIP -->
+<div class="photo-strip">
+  <div class="photo-strip__item"><img src="images/fall-river.jpg" alt="Upper Peninsula fall colors reflected in river" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/hero-ore-dock.jpg" alt="Marquette Ore Dock landmark on Lake Superior" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/red-lighthouse.jpg" alt="Marquette Harbor red lighthouse from above" loading="lazy"></div>
+  <div class="photo-strip__item"><img src="images/presque-isle-aerial.jpg" alt="Presque Isle coastline and Lake Superior" loading="lazy"></div>
+</div>
+
+<!-- RESOURCES -->
+<section class="resources" id="resources"><div class="container">
+  <div class="resources__header animate-in"><span class="section-label">Voter Resources</span><h2 class="section-heading">Know Your Rights. Cast Your Vote.</h2><p class="section-subtitle" style="margin:0 auto">Essential tools and links for every Marquette County voter.</p></div>
+  <div class="resources__grid">
+    <div class="rcard animate-in ad1"><div class="rcard__icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-clipboard"/></svg></div><h3 class="rcard__title">Register to Vote</h3><p class="rcard__text">Michigan allows same-day voter registration. Make sure you're registered and ready for every election.</p><a href="https://mvic.sos.state.mi.us/RegisterVoter" target="_blank" rel="noopener" class="rcard__link">Register Now <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></a></div>
+    <div class="rcard animate-in ad2"><div class="rcard__icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-pin"/></svg></div><h3 class="rcard__title">Find Your Polling Place</h3><p class="rcard__text">Look up your assigned polling location, see your ballot, and find precinct information.</p><a href="https://mvic.sos.state.mi.us/" target="_blank" rel="noopener" class="rcard__link">Look It Up <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></a></div>
+    <div class="rcard animate-in ad3"><div class="rcard__icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-file"/></svg></div><h3 class="rcard__title">Become a Precinct Delegate</h3><p class="rcard__text">The most important grassroots role in the party. Represent your precinct and shape party direction.</p><a href="#contact" class="rcard__link">Learn How <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section class="contact-s" id="contact"><div class="container container--narrow">
+  <div style="text-align:center;margin-bottom:var(--sp12)" class="animate-in"><span class="section-label">Contact Us</span><h2 class="section-heading">Get in Touch</h2><p class="section-subtitle" style="margin:0 auto">Have a question, want to volunteer, or interested in running for office? We'd love to hear from you.</p></div>
+  <div class="cform animate-in ad1">
+    <div class="form-row"><div><label class="form-label">First Name *</label><input type="text" class="form-input"></div><div><label class="form-label">Last Name *</label><input type="text" class="form-input"></div></div>
+    <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input"></div>
+    <div class="form-group"><label class="form-label">Phone <span class="form-label--opt">(optional)</span></label><input type="tel" class="form-input"></div>
+    <div class="form-group"><label class="form-label">I'm Interested In</label><select class="form-select"><option value="">Select an option...</option><option>Volunteering</option><option>Becoming a Precinct Delegate</option><option>Attending Events</option><option>Running for Office</option><option>Donating</option><option>General Information</option></select></div>
+    <div class="form-group"><label class="form-label">Message</label><textarea rows="4" class="form-textarea"></textarea></div>
+    <div style="margin-bottom:var(--sp6)"><label class="form-check"><input type="checkbox"> By providing your phone number, you consent to receive text messages from the Marquette County Republican Party. Message and data rates may apply. Reply STOP to opt out at any time.</label></div>
+    <button class="btn btn--primary btn--lg" style="width:100%">Send Message</button>
+  </div>
+</div></section>
+
+<!-- PRE-FOOTER SCENIC CTA -->
+<div class="scenic">
+  <img src="images/fall-river.jpg" alt="Downtown Marquette shops on Washington Street" loading="lazy">
+  <div class="scenic__over"><div class="scenic__text">
+    <h2>Ready to Make a Difference?</h2><p>Join the Marquette County Republican Party. Volunteer. Donate. Vote. Every action matters.</p>
+    <div style="display:flex;gap:var(--sp4);justify-content:center;flex-wrap:wrap">
+      <a href="#membership" class="btn btn--primary btn--lg">Become a Member</a>
+      <a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--secondary btn--lg">Donate Now</a>
+    </div>
+  </div></div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <div style="display:flex;align-items:center;gap:var(--sp3);margin-bottom:var(--sp5)"><div class="header__logo-icon"><svg width="20" height="20" viewBox="0 0 64 64" fill="white"><path d="M52 12c-2.2 0-4.2.9-5.7 2.3C44.1 10.3 39.4 8 34 8c-9.9 0-18 8.1-18 18v2c-4.4 0-8 3.6-8 8s3.6 8 8 8h2v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4v-8h4v8c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4V36h2c1.1 0 2-.9 2-2v-4h4c2.2 0 4-1.8 4-4V16c0-2.2-1.8-4-4-4zm-4 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg></div><div style="color:var(--white);font-family:var(--font-display);font-weight:700">Marquette County<br>Republican Party</div></div>
+      <p>Organizing, supporting, and electing Republican leaders in Michigan's Upper Peninsula. Active year-round for our community.</p>
+      <div class="footer__social"><a href="https://www.facebook.com/profile.php?id=61577689494016" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" fill="currentColor"><use href="#i-fb"/></svg></a></div>
+    </div>
+    <div class="footer__col"><h4>Get Involved</h4><a href="#membership">Membership</a><a href="#involved">Volunteer</a><a href="#events">Events</a><a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener">Donate</a><a href="#contact">Contact</a></div>
+    <div class="footer__col"><h4>Resources</h4><a href="#resources">Voter Resources</a><a href="https://mvic.sos.state.mi.us/" target="_blank" rel="noopener">MI Voter Info</a><a href="#leadership">Leadership</a><a href="#">County Bylaws</a><a href="#">Precinct Delegates</a></div>
+    <div class="footer__col"><h4>Contact</h4><a href="mailto:jamessshelby@msn.com">Email Us</a><a href="https://www.facebook.com/profile.php?id=61577689494016" target="_blank" rel="noopener">Facebook</a><p style="font-size:.875rem;color:rgba(255,255,255,.45);padding-top:var(--sp3)">Marquette County<br>Michigan, USA</p></div>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__disclaimer"><p style="margin-bottom:var(--sp2)"><strong>Paid for by the Marquette County Republican Party.</strong></p><p>Not authorized by any candidate or candidate's committee. Contributions to the Marquette County Republican Party are not tax deductible. Confirm all contribution limits and disclosure requirements with local, state, or federal counsel or your compliance team.</p></div>
+    <div class="footer__legal"><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Accessibility</a></div>
+  </div>
+</div></footer>
+
+<!-- STICKY DONATE MOBILE -->
+<div class="sticky-donate"><a href="https://secure.anedot.com/marquette-county-republican-party/donate" target="_blank" rel="noopener" class="btn btn--donate btn--lg"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/></svg> Donate to Marquette County GOP</a></div>
+
+<!-- BACK TO TOP -->
+<button class="btt" id="backToTop" aria-label="Back to top"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-up"/></svg></button>
+
+<!-- FACEBOOK SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+
+<script>
+(function(){
+  'use strict';
+  var toggle=document.getElementById('mobileToggle'),nav=document.getElementById('mainNav');
+  if(toggle&&nav){toggle.addEventListener('click',function(){var o=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';var s=toggle.querySelectorAll('span');if(o){s[0].style.transform='rotate(45deg) translateY(7px)';s[1].style.opacity='0';s[2].style.transform='rotate(-45deg) translateY(-7px)'}else{s[0].style.transform='';s[1].style.opacity='';s[2].style.transform=''}});nav.querySelectorAll('.nav__link').forEach(function(l){l.addEventListener('click',function(){nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');document.body.style.overflow='';var s=toggle.querySelectorAll('span');s[0].style.transform='';s[1].style.opacity='';s[2].style.transform=''})})}
+  var amts=document.querySelectorAll('.dcard__amt'),db=document.getElementById('donateBtn'),ci=document.querySelector('.dcard__custom');
+  amts.forEach(function(b){b.addEventListener('click',function(){amts.forEach(function(x){x.classList.remove('is-active')});b.classList.add('is-active');if(ci)ci.value='';if(db)db.innerHTML='<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/><\/svg> Donate $'+Number(b.dataset.amount).toLocaleString()+' Now'})});
+  if(ci)ci.addEventListener('input',function(){amts.forEach(function(x){x.classList.remove('is-active')});var v=ci.value.replace(/[^0-9]/g,'');if(v&&db)db.innerHTML='<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/><\/svg> Donate $'+Number(v).toLocaleString()+' Now';else if(db)db.innerHTML='<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-heart"/><\/svg> Donate Now'});
+  var ae=document.querySelectorAll('.animate-in');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-visible');io.unobserve(en.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});ae.forEach(function(el){io.observe(el)})}else{ae.forEach(function(el){el.classList.add('is-visible')})}
+  var btt=document.getElementById('backToTop');if(btt){window.addEventListener('scroll',function(){btt.classList.toggle('is-visible',window.scrollY>600)},{passive:true});btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})})}
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();var off=window.innerWidth<=1024?64:80;window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-off,behavior:'smooth'})}})});
+  function resizeFB(){var f=document.getElementById('fbFrame'),c=document.getElementById('fbEmbedContainer');if(f&&c){var w=Math.min(c.offsetWidth-2,500);f.src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61577689494016&tabs=timeline&width='+w+'&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&lazy=true';f.style.width=w+'px'}}
+  window.addEventListener('load',resizeFB);var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(resizeFB,300)});
+})();
+</script>
+</body>
+</html>
