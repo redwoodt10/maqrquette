@@ -1,2 +1,2 @@
-# maqrquette
+# marquette
 mqtgop
