@@ -514,7 +514,7 @@ p+p{margin-top:var(--sp4)}
 <section class="newsletter" id="newsletter"><div class="container"><div class="newsletter__inner">
   <div class="newsletter__text"><h2>Stay in the Loop</h2><p>Get event announcements, election updates, and ways to help &mdash; straight to your inbox.</p></div>
   <div class="newsletter__fw">
-    <div class="newsletter__form"><input type="email" class="newsletter__input" placeholder="Your email address" aria-label="Email"><button class="btn btn--white btn--sm">Get Updates</button></div>
+    <form class="newsletter__form" action="https://formsubmit.co/takalo7656@gmail.com" method="POST"><input type="hidden" name="_subject" value="MQTGOP Website - New Email Subscriber"><input type="hidden" name="_next" value="https://redwoodt10.github.io/maqrquette/#newsletter"><input type="hidden" name="_captcha" value="true"><input type="email" name="subscriber_email" class="newsletter__input" placeholder="Your email address" aria-label="Email" required><button type="submit" class="btn btn--white btn--sm">Get Updates</button></form>
     <p class="newsletter__consent">By subscribing, you agree to receive email communications from the Marquette County Republican Party. You may unsubscribe at any time. We respect your privacy. If providing a phone number elsewhere on this site, you consent to receive text messages; message and data rates may apply.</p>
   </div>
 </div></div></section>
@@ -540,15 +540,18 @@ p+p{margin-top:var(--sp4)}
 <!-- CONTACT -->
 <section class="contact-s" id="contact"><div class="container container--narrow">
   <div style="text-align:center;margin-bottom:var(--sp12)" class="animate-in"><span class="section-label">Contact Us</span><h2 class="section-heading">Get in Touch</h2><p class="section-subtitle" style="margin:0 auto">Have a question, want to volunteer, or interested in running for office? We'd love to hear from you.</p></div>
-  <div class="cform animate-in ad1">
-    <div class="form-row"><div><label class="form-label">First Name *</label><input type="text" class="form-input"></div><div><label class="form-label">Last Name *</label><input type="text" class="form-input"></div></div>
-    <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input"></div>
-    <div class="form-group"><label class="form-label">Phone <span class="form-label--opt">(optional)</span></label><input type="tel" class="form-input"></div>
-    <div class="form-group"><label class="form-label">I'm Interested In</label><select class="form-select"><option value="">Select an option...</option><option>Volunteering</option><option>Becoming a Precinct Delegate</option><option>Attending Events</option><option>Running for Office</option><option>Donating</option><option>General Information</option></select></div>
-    <div class="form-group"><label class="form-label">Message</label><textarea rows="4" class="form-textarea"></textarea></div>
+  <form class="cform animate-in ad1" action="https://formsubmit.co/takalo7656@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="MQTGOP Website - New Contact Form Submission">
+    <input type="hidden" name="_next" value="https://redwoodt10.github.io/maqrquette/#contact">
+    <input type="hidden" name="_captcha" value="true">
+    <div class="form-row"><div><label class="form-label">First Name *</label><input type="text" name="first_name" class="form-input" required></div><div><label class="form-label">Last Name *</label><input type="text" name="last_name" class="form-input" required></div></div>
+    <div class="form-group"><label class="form-label">Email *</label><input type="email" name="email" class="form-input" required></div>
+    <div class="form-group"><label class="form-label">Phone <span class="form-label--opt">(optional)</span></label><input type="tel" name="phone" class="form-input"></div>
+    <div class="form-group"><label class="form-label">I'm Interested In</label><select name="interested_in" class="form-select"><option value="">Select an option...</option><option>Volunteering</option><option>Becoming a Precinct Delegate</option><option>Attending Events</option><option>Running for Office</option><option>Donating</option><option>General Information</option></select></div>
+    <div class="form-group"><label class="form-label">Message</label><textarea rows="4" name="message" class="form-textarea"></textarea></div>
     <div style="margin-bottom:var(--sp6)"><label class="form-check"><input type="checkbox"> By providing your phone number, you consent to receive text messages from the Marquette County Republican Party. Message and data rates may apply. Reply STOP to opt out at any time.</label></div>
-    <button class="btn btn--primary btn--lg" style="width:100%">Send Message</button>
-  </div>
+    <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Message</button>
+  </form>
 </div></section>
 
 <!-- PRE-FOOTER SCENIC CTA -->
@@ -608,4 +611,3 @@ p+p{margin-top:var(--sp4)}
 </script>
 </body>
 </html>
-
